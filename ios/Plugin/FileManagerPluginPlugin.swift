@@ -9,10 +9,10 @@ import Capacitor
 public class FileManagerPluginPlugin: CAPPlugin {
     private let implementation = FileManagerPlugin()
 
-    @objc func echo(_ call: CAPPluginCall) {
-        let value = call.getString("value") ?? ""
+    @objc func containerURLPath(_ call: CAPPluginCall) {
+        let forSecurityApplicationGroupIdentifier = call.getString("forSecurityApplicationGroupIdentifier") ?? ""
         call.resolve([
-            "value": implementation.echo(value)
+            "forSecurityApplicationGroupIdentifier": implementation.containerURLPath(forSecurityApplicationGroupIdentifier: forSecurityApplicationGroupIdentifier)
         ])
     }
 }
