@@ -5,8 +5,8 @@ import type { FileManagerPluginPlugin } from './definitions';
 export class FileManagerPluginWeb
   extends WebPlugin
   implements FileManagerPluginPlugin {
-  async echo(options: { value: string }): Promise<{ value: string }> {
+  async containerURLPath(options: { forSecurityApplicationGroupIdentifier: string }): Promise<string> {
     console.log('ECHO', options);
-    return options;
+    return 'options';
   }
 }

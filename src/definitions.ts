@@ -1,3 +1,3 @@
 export interface FileManagerPluginPlugin {
-  echo(options: { value: string }): Promise<{ value: string }>;
+  containerURLPath(options: { forSecurityApplicationGroupIdentifier: string }): Promise<string>;
 }

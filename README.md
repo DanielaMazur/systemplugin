@@ -11,9 +11,27 @@ npx cap sync
 
 ## API
 
-<docgen-index></docgen-index>
+<docgen-index>
+
+* [`containerURLPath(...)`](#containerurlpath)
+
+</docgen-index>
 
 <docgen-api>
-<!-- run docgen to generate docs from the source -->
-<!-- More info: https://github.com/ionic-team/capacitor-docgen -->
+<!--Update the source file JSDoc comments and rerun docgen to update the docs below-->
+
+### containerURLPath(...)
+
+```typescript
+containerURLPath(options: { forSecurityApplicationGroupIdentifier: string; }) => any
+```
+
+| Param         | Type                                                            |
+| ------------- | --------------------------------------------------------------- |
+| **`options`** | <code>{ forSecurityApplicationGroupIdentifier: string; }</code> |
+
+**Returns:** <code>any</code>
+
+--------------------
+
 </docgen-api>
